@@ -46,6 +46,19 @@
   border-bottom: 3px solid transparent;
   transition: all 0.2s;
   letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-tab i {
+  font-size: 1.1em;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.nav-tab:hover i {
+  opacity: 1;
 }
 
 .nav-tab:hover { 
@@ -55,4 +68,8 @@
 .nav-tab.active {
   color: var(--blue-deep, #1a365d);
   border-bottom-color: var(--blue-mid, #3182ce);
+}
+
+.nav-tab.active i {
+  opacity: 1;
 }
