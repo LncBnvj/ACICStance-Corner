@@ -1,0 +1,37 @@
+.device-row { 
+  display: flex; 
+  gap: 8px; 
+  margin-bottom: 8px; 
+}
+
+.device-card {
+  flex: 1;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+}
+
+.device-card .dicon { 
+  font-size: 1.3rem; 
+}
+
+.device-card .dname { 
+  font-size: 0.72rem; 
+  font-weight: 700; 
+  margin-top: 4px; 
+}
+
+.device-card .davail { 
+  font-size: 0.68rem; 
+  color: var(--gray-500); 
+}
+
+.device-card .davail.ok { 
+  color: var(--success); 
+}
+
+.device-card .davail.low { 
+  color: #f59e0b; 
+}

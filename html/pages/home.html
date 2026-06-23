@@ -1,0 +1,76 @@
+<div class="page active" id="page-home">
+  <div class="hero-card">
+    <h2>Welcome to ACICStance Corner</h2>
+    <p>Your one-stop student services hub. Borrow materials, request printing, get academic support, and more — all in one place.</p>
+  </div>
+
+  <div class="points-teaser" onclick="showPage('points', Array.from(document.querySelectorAll('.nav-tab')).find(btn => btn.textContent.includes('Points')))">
+    <div class="points-teaser-left">
+      <div class="points-teaser-label">aCICSt Points Balance</div>
+      <div class="points-teaser-value" id="home-points-balance">0</div>
+    </div>
+    <div class="points-teaser-right">
+      <span class="points-teaser-cta">View &amp; Redeem →</span>
+    </div>
+  </div>
+
+  <p class="section-label">Avail a Service</p>
+  <div class="services-grid">
+    <div class="service-card" onclick="goToService('printing-service')">
+      <span class="icon"></span>
+      <h3>Printing Service</h3>
+      <p>Print, scan, or photocopy documents</p>
+    </div>
+    
+    <div class="service-card" onclick="goToService('school-suppplies')">
+      <span class="icon"></span>
+      <h3>School Supplies</h3>
+      <p>Receive free school supply grants</p>
+    </div>
+    
+    <div class="service-card" onclick="goToService('borrowing-service')">
+      <span class="icon"></span>
+      <h3>Borrow Essentials</h3>
+      <p>Calculators, chargers, peripherals</p>
+    </div>
+    
+    <div class="service-card" onclick="goToService('hygiene-service')">
+      <span class="icon"></span>
+      <h3>Hygiene Essentials</h3>
+      <p>Hygiene items for students in need</p>
+    </div>
+    
+    <div class="service-card" onclick="goToService('thesis-binding')">
+      <span class="icon"></span>
+      <h3>Thesis Binding</h3>
+      <p>Official capstone binding service</p>
+    </div>
+    
+    <div class="service-card" onclick="goToService('contests-support')">
+      <span class="icon"></span>
+      <h3>Contest Support</h3>
+      <p>Academic competition endorsements</p>
+    </div>
+    
+    <div class="service-card" onclick="goToService('donation-drive')">
+      <span class="icon"></span>
+      <h3>Donation Drive</h3>
+      <p>Donate goods for community outreach</p>
+    </div>
+
+    <div class="service-card" onclick="showPage('chatbot', Array.from(document.querySelectorAll('.nav-tab')).find(btn => btn.textContent.includes('Assistant')))">
+      <span class="icon"></span>
+      <h3>AI Assistant</h3>
+      <p>Ask questions, get instant help</p>
+    </div>
+  </div>
+
+  <div class="feedback-strip">
+    <h3>InCICSights Feedback Forms</h3>
+    <p>Help us debug your doubts and download clarity through your feedback!</p>
+    <div class="feedback-btns">
+      <button class="fb-btn faculty">CICS Faculty</button>
+      <button class="fb-btn corner">ACICStance Corner</button>
+    </div>
+  </div>
+</div>

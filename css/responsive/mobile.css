@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .site-header {
+    padding: 16px;
+  }
+}

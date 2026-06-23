@@ -1,0 +1,19 @@
+<div class="redeem-modal-overlay" id="redeem-modal-overlay">
+  <div class="redeem-modal">
+    <h3>Confirm Redemption Request</h3>
+    <p>Your aCICSt Points will be submitted to CICS-SC for batch processing with Globe. Approved redemptions are credited to your registered Globe number as Globe Rewards points within 3-5 business days.</p>
+    <div class="form-group">
+      <label>aCICSt Points to Redeem <span class="req">*</span></label>
+      <input type="number" id="redeem-amount" min="10" step="10" placeholder="ex. 50">
+    </div>
+    <div class="form-group">
+      <label>Registered Globe/TM Number <span class="req">*</span></label>
+      <input type="text" id="redeem-globe-number" placeholder="ex. 0917XXXXXXX">
+    </div>
+    <div class="slot-badge" id="redeem-preview">You will receive 0 Globe Rewards points</div>
+    <div class="redeem-modal-actions">
+      <button class="redeem-cancel-btn" onclick="closeRedeemModal()">Cancel</button>
+      <button class="redeem-confirm-btn" onclick="confirmRedeem()">Submit Request</button>
+    </div>
+  </div>
+</div>

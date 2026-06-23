@@ -1,0 +1,47 @@
+.job-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 10px;
+  border-left: 4px solid var(--blue-mid);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.job-card:hover { 
+  transform: translateY(-2px); 
+}
+
+.job-card .title { 
+  font-size: 0.9rem; 
+  font-weight: 700; 
+  color: var(--gray-900); 
+}
+
+.job-card .company { 
+  font-size: 0.78rem; 
+  color: var(--blue-mid); 
+  font-weight: 600; 
+  margin-top: 2px; 
+}
+
+.job-card .meta { 
+  display: flex; 
+  gap: 10px; 
+  margin-top: 8px; 
+  flex-wrap: wrap; 
+}
+
+.job-tag { 
+  font-size: 0.68rem; 
+  font-weight: 600; 
+  padding: 3px 8px; 
+  border-radius: 99px; 
+}
+
+.job-tag.internship { background: #ede9fe; color: #5b21b6; }
+.job-tag.fulltime { background: #d1fae5; color: #065f46; }
+.job-tag.remote { background: #fef3c7; color: #92400e; }
+.job-tag.onsite { background: #dbeafe; color: #1e40af; }
+.job-tag.deadline { background: var(--gray-100); color: var(--gray-700); }

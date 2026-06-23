@@ -1,0 +1,42 @@
+<div class="page" id="page-log-entry">
+  <div class="form-card">
+    <div class="section-title">Submit Log Entry</div>
+    <div class="form-group">
+      <label>Full Name (Last, First, M.I.) <span class="req">*</span></label>
+      <input type="text" id="field-name" placeholder="ex. Dela Cruz, Juan A.">
+    </div>
+    <div class="form-group">
+      <label>SR Code <span class="req">*</span></label>
+      <input type="text" id="field-srcode" placeholder="ex. 20-12345">
+    </div>
+    <div class="form-group">
+      <label>Section <span class="req">*</span></label>
+      <input type="text" id="field-section" placeholder="ex. CS-1101">
+    </div>
+    <div class="form-group">
+      <label>Program <span class="req">*</span></label>
+      <select id="field-program">
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Information Systems</option>
+        <option>Computer Engineering</option>
+      </select>
+    </div>
+<div class="form-group">
+  <label>Service Availed <span class="req">*</span></label>
+  <select id="service-select"> <option value="">Select Service</option>
+    <option value="printing-service">Printing Service</option>
+    <option value="school-suppplies">School Supplies Granting</option> 
+    <option value="borrowing-service">School Essentials Borrowing</option>
+    <option value="hygiene-service">Hygiene Essentials Granting</option>
+    <option value="thesis-binding">Thesis/Capstone Binding</option>
+    <option value="donation-drive">Donation Drive</option>
+    <option value="contests-support">Academic Contest Support</option>
+  </select>
+</div>
+
+    <div id="service-details-container"></div>
+
+    <button class="submit-btn" onclick="submitForm()">Submit Log Entry</button>
+  </div>
+  </div>

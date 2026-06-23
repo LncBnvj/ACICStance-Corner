@@ -1,0 +1,23 @@
+.badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-pending { background: #fef3c7; color: #92400e; }
+.badge-approved { background: #d1fae5; color: #065f46; }
+.badge-released { background: #dbeafe; color: #1e40af; }
+
+.slot-badge {
+  background: #dbeafe;
+  color: var(--blue-deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  margin-top: 10px;
+}

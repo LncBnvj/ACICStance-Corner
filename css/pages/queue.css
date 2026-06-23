@@ -1,0 +1,31 @@
+.status-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.queue-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.queue-info { 
+  flex: 1; 
+}
+
+.queue-info .name { 
+  font-size: 0.85rem; 
+  font-weight: 600; 
+}
+
+.queue-info .sub { 
+  font-size: 0.72rem; 
+  color: var(--gray-500); 
+  margin-top: 2px; 
+}

@@ -1,0 +1,64 @@
+.redeem-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15,23,42,0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.redeem-modal-overlay.show { 
+  display: flex; 
+}
+
+.redeem-modal {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.redeem-modal h3 { 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.05rem; 
+  font-weight: 700; 
+  color: var(--blue-deep); 
+  margin-bottom: 6px; 
+}
+
+.redeem-modal p { 
+  font-size: 0.8rem; 
+  color: var(--gray-500); 
+  margin-bottom: 16px; 
+  line-height: 1.5; 
+}
+
+.redeem-modal-actions { 
+  display: flex; 
+  gap: 10px; 
+  margin-top: 18px; 
+}
+
+.redeem-modal-actions button {
+  flex: 1;
+  padding: 11px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.redeem-cancel-btn { 
+  background: var(--gray-100); 
+  color: var(--gray-700); 
+}
+
+.redeem-confirm-btn { 
+  background: linear-gradient(135deg, var(--blue-deep), var(--blue-light)); 
+  color: white; 
+}

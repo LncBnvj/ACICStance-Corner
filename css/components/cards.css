@@ -1,0 +1,62 @@
+.hero-card {
+  background: linear-gradient(135deg, #0a6dd8, #38c4f0);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::after {
+  content: '';
+  position: absolute;
+  right: -30px; top: -30px;
+  width: 130px; height: 130px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+
+.hero-card h2 { 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.3rem; 
+  font-weight: 700; 
+  margin-bottom: 6px; 
+}
+
+.hero-card p { 
+  font-size: 0.84rem; 
+  opacity: 0.88; 
+  line-height: 1.5; 
+}
+
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 16px;
+}
+
+.status-card {
+  flex: 1;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.status-card .num { 
+  font-size: 1.8rem; 
+  font-weight: 800; 
+  color: var(--blue-deep); 
+  line-height: 1; 
+}
+
+.status-card .lbl { 
+  font-size: 0.7rem; 
+  font-weight: 600; 
+  color: var(--gray-500); 
+  margin-top: 4px; 
+}

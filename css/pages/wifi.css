@@ -1,0 +1,37 @@
+.wifi-card {
+  background: linear-gradient(135deg, #0a6dd8, #1a8fe8);
+  border-radius: var(--radius);
+  padding: 18px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.wifi-card h3 { 
+  font-size: 0.9rem; 
+  font-weight: 700; 
+  margin-bottom: 4px; 
+}
+
+.wifi-card p { 
+  font-size: 0.76rem; 
+  opacity: 0.85; 
+}
+
+.wifi-status { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-top: 12px; 
+}
+
+.wifi-dot { 
+  width: 10px; height: 10px; 
+  background: #4ade80; 
+  border-radius: 50%; 
+  animation: pulse 2s infinite; 
+}
+
+.wifi-status span { 
+  font-size: 0.78rem; 
+  font-weight: 600; 
+}

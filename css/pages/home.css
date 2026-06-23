@@ -1,0 +1,81 @@
+.points-teaser {
+  background: linear-gradient(135deg, #0a2540, #0a6dd8);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+}
+
+.points-teaser-label { 
+  font-size: 0.7rem; 
+  font-weight: 600; 
+  color: rgba(255,255,255,0.75); 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em; 
+}
+
+.points-teaser-value { 
+  font-size: 1.6rem; 
+  font-weight: 800; 
+  color: #ffd54a; 
+  font-family: 'Poppins', sans-serif; 
+  margin-top: 2px; 
+}
+
+.points-teaser-cta { 
+  font-size: 0.78rem; 
+  font-weight: 700; 
+  color: white; 
+}
+
+.feedback-strip {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  margin-top: 20px;
+}
+
+.feedback-strip h3 { 
+  font-size: 0.9rem; 
+  font-weight: 700; 
+  color: var(--blue-deep); 
+  margin-bottom: 4px; 
+}
+
+.feedback-strip p { 
+  font-size: 0.76rem; 
+  color: var(--gray-500); 
+  margin-bottom: 12px; 
+}
+
+.feedback-btns { 
+  display: flex; 
+  gap: 8px; 
+  justify-content: center; 
+}
+
+.fb-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.fb-btn.faculty { 
+  background: linear-gradient(135deg, #0a6dd8, #38c4f0); 
+  color: white; 
+}
+
+.fb-btn.corner { 
+  background: linear-gradient(135deg, #06b6d4, #38c4f0); 
+  color: white; 
+}

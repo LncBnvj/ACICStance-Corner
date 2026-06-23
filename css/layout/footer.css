@@ -1,0 +1,14 @@
+.partner-footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 0.66rem;
+  color: var(--gray-500);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.partner-footer span { 
+  color: var(--blue-mid); 
+}

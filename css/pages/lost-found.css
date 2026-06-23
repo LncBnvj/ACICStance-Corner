@@ -1,0 +1,30 @@
+.lf-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 10px;
+}
+
+.lf-card .item-name { 
+  font-size: 0.88rem; 
+  font-weight: 700; 
+}
+
+.lf-card .item-meta { 
+  font-size: 0.74rem; 
+  color: var(--gray-500); 
+  margin-top: 4px; 
+}
+
+.lf-badge { 
+  display: inline-block; 
+  font-size: 0.68rem; 
+  font-weight: 700; 
+  padding: 2px 8px; 
+  border-radius: 99px; 
+  margin-top: 8px; 
+}
+
+.lf-found { background: #d1fae5; color: #065f46; }
+.lf-lost { background: #fee2e2; color: #991b1b; }

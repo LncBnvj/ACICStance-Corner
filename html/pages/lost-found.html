@@ -1,0 +1,46 @@
+<div class="page" id="page-lostandfound">
+  <div class="form-card">
+    <div class="section-title">Report Lost / Found Item</div>
+    <div class="form-group">
+      <label>Item Description <span class="req">*</span></label>
+      <input type="text" placeholder="ex. Black scientific calculator">
+    </div>
+    <div class="form-group">
+      <label>Type <span class="req">*</span></label>
+      <select>
+        <option>I lost this item</option>
+        <option>I found this item</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Location Found / Last Seen <span class="req">*</span></label>
+      <input type="text" placeholder="ex. Room 301, CICS Building">
+    </div>
+    <div class="form-group">
+      <label>Contact Number <span class="req">*</span></label>
+      <input type="text" placeholder="ex. 09XX-XXX-XXXX">
+    </div>
+    <button class="submit-btn" onclick="showToast('Report submitted!')">Submit Report</button>
+  </div>
+  <p class="section-label" style="margin-top:10px;">Recent Items</p>
+  <div class="lf-card">
+    <div class="item-name">Casio FX-991ES Calculator</div>
+    <div class="item-meta">Found at: Library Reading Area · June 13, 2025</div>
+    <span class="lf-badge lf-found">Found</span>
+  </div>
+  <div class="lf-card">
+    <div class="item-name">Blue Jansport Backpack</div>
+    <div class="item-meta">Lost at: Canteen Area · June 12, 2025</div>
+    <span class="lf-badge lf-lost">Lost</span>
+  </div>
+  <div class="lf-card">
+    <div class="item-name">USB-C Charger (Samsung)</div>
+    <div class="item-meta">Found at: Room 204 · June 11, 2025</div>
+    <span class="lf-badge lf-found">Found</span>
+  </div>
+  <div class="lf-card">
+    <div class="item-name">Student ID (Santos, Maria)</div>
+    <div class="item-meta">Found at: CICS Office Entrance · June 10, 2025</div>
+    <span class="lf-badge lf-found">Found</span>
+  </div>
+</div>

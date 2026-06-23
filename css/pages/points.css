@@ -1,0 +1,189 @@
+.points-hero {
+  background: linear-gradient(135deg, #0a2540 0%, #0a6dd8 60%, #38c4f0 100%);
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  color: white;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.points-hero::after {
+  content: '';
+  position: absolute;
+  right: -40px; bottom: -40px;
+  width: 150px; height: 150px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+}
+
+.points-hero-label { 
+  font-size: 0.72rem; 
+  font-weight: 600; 
+  color: rgba(255,255,255,0.7); 
+  text-transform: uppercase; 
+  letter-spacing: 0.06em; 
+}
+
+.points-hero-value { 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 2.6rem; 
+  font-weight: 800; 
+  color: #ffd54a; 
+  line-height: 1.1; 
+  margin-top: 4px; 
+}
+
+.points-hero-sub { 
+  font-size: 0.78rem; 
+  color: rgba(255,255,255,0.75); 
+  margin-top: 4px; 
+}
+
+.points-hero-row { 
+  display: flex; 
+  gap: 10px; 
+  margin-top: 18px; 
+}
+
+.points-hero-stat { 
+  flex: 1; 
+  background: rgba(255,255,255,0.10); 
+  border-radius: var(--radius-sm); 
+  padding: 10px 12px; 
+}
+
+.points-hero-stat .v { 
+  font-size: 1.1rem; 
+  font-weight: 800; 
+}
+
+.points-hero-stat .l { 
+  font-size: 0.66rem; 
+  color: rgba(255,255,255,0.7); 
+  margin-top: 1px; 
+}
+
+.earn-rates-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 16px;
+}
+
+.earn-rates-card h3 { 
+  font-size: 0.84rem; 
+  font-weight: 700; 
+  color: var(--gray-700); 
+  margin-bottom: 12px; 
+}
+
+.earn-rate-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.8rem;
+}
+
+.earn-rate-row:last-child { 
+  border-bottom: none; 
+}
+
+.earn-rate-row .svc-name { 
+  color: var(--gray-700); 
+  font-weight: 500; 
+}
+
+.earn-rate-row .pts-val { 
+  color: var(--blue-deep); 
+  font-weight: 700; 
+  font-size: 0.78rem; 
+  background: #dbeafe; 
+  padding: 3px 10px; 
+  border-radius: 99px; 
+}
+
+.redeem-card {
+  background: linear-gradient(135deg, #1a8fe8, #38c4f0);
+  border-radius: var(--radius);
+  padding: 20px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.redeem-card h3 { 
+  font-size: 0.95rem; 
+  font-weight: 700; 
+  margin-bottom: 4px; 
+}
+
+.redeem-card p { 
+  font-size: 0.78rem; 
+  opacity: 0.9; 
+  line-height: 1.5; 
+  margin-bottom: 14px; 
+}
+
+.redeem-rate-box {
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redeem-btn {
+  width: 100%;
+  background: white;
+  color: var(--blue-deep);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.redeem-btn:disabled { 
+  opacity: 0.5; 
+  cursor: not-allowed; 
+}
+
+.ledger-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.ledger-info .svc { 
+  font-size: 0.82rem; 
+  font-weight: 600; 
+  color: var(--gray-900); 
+}
+
+.ledger-info .date { 
+  font-size: 0.7rem; 
+  color: var(--gray-500); 
+  margin-top: 2px; 
+}
+
+.ledger-pts { 
+  font-size: 0.9rem; 
+  font-weight: 800; 
+  font-family: 'Poppins', sans-serif; 
+}
+
+.ledger-pts.earn { color: var(--success); }
+.ledger-pts.redeem { color: var(--error); }

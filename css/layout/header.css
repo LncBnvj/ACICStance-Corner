@@ -1,0 +1,32 @@
+.site-header {
+  background: linear-gradient(135deg, #0a6dd8 0%, #1a8fe8 50%, #38c4f0 100%);
+  padding: 22px 24px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(10,109,216,0.25);
+}
+
+.logo-cube {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.header-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.header-text p {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.82);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 3px;
+}

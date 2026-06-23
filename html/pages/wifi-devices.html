@@ -1,0 +1,51 @@
+<div class="page" id="page-wifi">
+  <div class="wifi-card">
+    <h3>Pocket WiFi Lending Station</h3>
+    <p>Globe 5G — powered by Globe in partnership with ACICStance Corner</p>
+    <div class="wifi-status">
+      <div class="wifi-dot"></div>
+      <span>Network Online · Strong Signal</span>
+    </div>
+  </div>
+  <p class="section-label">Device Availability</p>
+  <div class="device-row">
+    <div class="device-card"><div class="dicon"></div><div class="dname">Pocket WiFi</div><div class="davail ok">5 Available</div></div>
+    <div class="device-card"><div class="dicon"></div><div class="dname">Mouse</div><div class="davail ok">8 Available</div></div>
+    <div class="device-card"><div class="dicon"></div><div class="dname">Keyboard</div><div class="davail low">2 Available</div></div>
+  </div>
+  <div class="device-row">
+    <div class="device-card"><div class="dicon"></div><div class="dname">Charger</div><div class="davail ok">6 Available</div></div>
+    <div class="device-card"><div class="dicon"></div><div class="dname">Ext. Cord</div><div class="davail ok">4 Available</div></div>
+    <div class="device-card"><div class="dicon"></div><div class="dname">HDMI Adapter</div><div class="davail low">1 Available</div></div>
+  </div>
+  <div class="form-card" style="margin-top:16px;">
+    <div class="section-title">Reserve a Device</div>
+    <div class="form-group">
+      <label>SR Code <span class="req">*</span></label>
+      <input type="text" placeholder="ex. 20-12345">
+    </div>
+    <div class="form-group">
+      <label>Device to Borrow <span class="req">*</span></label>
+      <select>
+        <option>Select Device</option>
+        <option>Pocket WiFi (Globe 5G)</option>
+        <option>Computer Mouse</option>
+        <option>Keyboard</option>
+        <option>Charger</option>
+        <option>Extension Cord</option>
+        <option>HDMI Adapter</option>
+        <option>Calculator</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Duration <span class="req">*</span></label>
+      <select>
+        <option>1 hour</option>
+        <option>2 hours</option>
+        <option>3 hours</option>
+        <option>Full day</option>
+      </select>
+    </div>
+    <button class="submit-btn" onclick="reserveDevice()">Reserve Now</button>
+  </div>
+</div>

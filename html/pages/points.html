@@ -1,0 +1,40 @@
+<div class="page" id="page-points">
+  <div class="points-hero">
+    <div class="points-hero-label">aCICSt Points Balance</div>
+    <div class="points-hero-value" id="points-balance">0</div>
+    <div class="points-hero-sub">≈ <span id="points-php-est">0</span> in Globe Rewards value (est.)</div>
+    <div class="points-hero-row">
+      <div class="points-hero-stat"><div class="v" id="points-lifetime">0</div><div class="l">Lifetime Earned</div></div>
+      <div class="points-hero-stat"><div class="v" id="points-redeemed">0</div><div class="l">Total Redeemed</div></div>
+      <div class="points-hero-stat"><div class="v" id="points-services">0</div><div class="l">Services Availed</div></div>
+    </div>
+  </div>
+
+  <div class="redeem-card">
+    <h3>Redeem to Globe Rewards</h3>
+    <p>Convert your aCICSt Points into Globe Rewards points, load, or data promos. Redemption requests are batched and processed by CICS-SC in partnership with Globe.</p>
+    <div class="redeem-rate-box">
+      <span>Conversion Rate</span>
+      <span>10 aCICSt pts = 1 Globe Rewards pt</span>
+    </div>
+    <button class="redeem-btn" id="redeem-trigger-btn" onclick="openRedeemModal()">Request Redemption</button>
+  </div>
+
+  <p class="section-label">How You Earn Points</p>
+  <div class="earn-rates-card">
+    <div class="earn-rate-row"><span class="svc-name">Printing Service</span><span class="pts-val">+5 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">School Supplies Granting</span><span class="pts-val">+8 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">School Essentials Borrowing</span><span class="pts-val">+6 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">Hygiene Essentials Granting</span><span class="pts-val">+8 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">Thesis/Capstone Binding</span><span class="pts-val">+20 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">Donation Drive</span><span class="pts-val">+25 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">Academic Contest Support</span><span class="pts-val">+30 pts</span></div>
+    <div class="earn-rate-row"><span class="svc-name">Device Reservation (WiFi/Devices)</span><span class="pts-val">+5 pts</span></div>
+  </div>
+
+  <p class="section-label">Points Ledger</p>
+  <div id="points-ledger">
+    <p style="font-size:0.8rem;color:var(--gray-500);text-align:center;padding:16px 0;" id="points-ledger-empty">No points activity yet. Avail a service to start earning!</p>
+  </div>
+  <div class="partner-footer">Powered by <span>Globe 5G</span> &middot; aCICSt Points Bridge</div>
+</div>

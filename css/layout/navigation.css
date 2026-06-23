@@ -1,0 +1,58 @@
+/* css/layout/navigation.css */
+
+.nav-wrapper {
+  /* 🚀 THE VISIBILITY FIX: Guarantee the outer container has full horizontal presence */
+  width: 100%; 
+  display: block;
+  
+  /* Fallback color declarations in case variables fail to map */
+  background: var(--white, #ffffff);
+  border-bottom: 2px solid var(--gray-100, #e2e8f0);
+  
+  overflow-x: auto;
+  scrollbar-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.nav-wrapper::-webkit-scrollbar { 
+  display: none; 
+}
+
+.nav-tabs {
+  display: flex;
+  padding: 0 16px;
+  gap: 2px;
+  
+  /* 🚀 THE TRACK FIX: Prevent flex space compression cleanly */
+  width: 100%;
+  max-width: 100%;
+}
+
+.nav-tab {
+  /* 🚀 STABILIZER: Explicitly lock the tab sizing properties so they remain visible */
+  flex: 0 0 auto; 
+  white-space: nowrap;
+  
+  padding: 14px 18px;
+  font-size: 0.85rem; /* Marginally scaled up from 0.78 for clearer accessibility spacing */
+  font-weight: 600;
+  color: var(--gray-500, #4a5568); /* Fallback dark gray */
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.nav-tab:hover { 
+  color: var(--blue-mid, #3182ce); 
+}
+
+.nav-tab.active {
+  color: var(--blue-deep, #1a365d);
+  border-bottom-color: var(--blue-mid, #3182ce);
+}
