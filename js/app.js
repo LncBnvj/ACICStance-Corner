@@ -46,10 +46,12 @@ function initializeApplicationView() {
 
     // Map matching your index.html placeholder IDs and folder assets
     const partials = [
-        { id: 'header-placeholder', path: 'html/partials/header.html' },
-        { id: 'navigation-placeholder', path: 'html/partials/navigation.html' },
+        { id: 'loader-container', path: 'html/partials/loader.html' },
+        { id: 'header-container', path: 'html/partials/header.html' },
+        { id: 'nav-container', path: 'html/partials/navigation.html' },
         { id: 'toast-placeholder', path: 'html/partials/toast.html' },
-        { id: 'modal-placeholder', path: 'html/partials/redeem-model.html' } // matches your file tree tree name exactly!
+        { id: 'modal-placeholder', path: 'html/partials/redeem-model.html' },
+        { id: 'footer-container', path: 'html/partials/footer.html' }
     ];
 
     // Fetch all files in parallel
@@ -71,6 +73,14 @@ function initializeApplicationView() {
             });
     })).then(() => {
         console.log("✅ Shell loading complete. Booting layout view controller.");
+
+        // Attach navigation events now that the partial is loaded
+        if (typeof initializeNavigation === 'function') {
+            initializeNavigation();
+            console.log("🚀 Navigation listeners attached.");
+        } else {
+            console.error("initializeNavigation function not found. Make sure navigation.js is loaded and correct.");
+        }
 
         // Trigger home screen ONLY after your navigation nodes exist in the DOM
         if (typeof showPage === 'function') {

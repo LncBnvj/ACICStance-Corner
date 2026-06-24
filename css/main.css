@@ -19,6 +19,7 @@
 @import url('components/items-list.css');
 @import url('components/file-upload.css');
 @import url('components/device-cards.css');
+@import url('components/loader.css');
 
 @import url('pages/home.css');
 @import url('pages/services.css');
